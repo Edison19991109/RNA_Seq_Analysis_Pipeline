@@ -1,6 +1,6 @@
 #!/bin/bash
-	sample_header="SRR18140"
-	sample_id=`seq 77 86`
+	sample_header=
+	sample_id=
 	reference_directory=
 	gtf_directory=
 	
