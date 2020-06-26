@@ -1,0 +1,3 @@
+nohup ./Aspera_FASTQC.sh &
+nohup ./Cutadapt.sh &
+nohup ./Bowtie2_SAMtools_Htseq_cout.sh &
