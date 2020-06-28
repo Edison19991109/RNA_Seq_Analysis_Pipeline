@@ -6,7 +6,7 @@
 	
 	for i in ${sample_id};
 	do
-	bowtie2 -x ${reference_directory} -U ./3_CUTADAPT/${sample_header}${i}_trimmed.fastq  -S ./4_BOWTIE2/${sample_header}${i}_trimmed.sam >./log/${sample_header}${i}_BOWTIE2_standard_output 2>./log/${sample_header}${i}_BOWTIE2_log
+	bowtie2 --threads 3 -x ${reference_directory} -U ./3_CUTADAPT/${sample_header}${i}_trimmed.fastq  -S ./4_BOWTIE2/${sample_header}${i}_trimmed.sam >./log/${sample_header}${i}_BOWTIE2_standard_output 2>./log/${sample_header}${i}_BOWTIE2_log
 	done;
 
 	for i in ${sample_id};
