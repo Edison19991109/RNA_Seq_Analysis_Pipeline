@@ -115,6 +115,8 @@ To perform the third step, you can run the script [`Cutadapt.sh`](https://github
 ## 3. Alignment, Format Transformation and Gene Assignment
 To perform these three steps, you can run the script [`Bowtie2_SAMtools_Htseq_cout.sh`](https://github.com/Edison19991109/RNA_Seq_Analysis_Pipeline/blob/master/codes/Bowtie2_SAMtools_Htseq_cout.sh). Alignment is conducted through `Bowtie2` and format transformation is conducted by using `samtools`. Gene assignment is conducted through `htseq-count`. 
 
+**Notice: This script only fits for single-read sequencing.**
+
 To run the script, sample header and sample ID are needed. For `Bowtie2` and `htseq-count`, paths of reference genome and its `.gtf` file are also needed.
 
 *(Detail version information of all the programs that are mentioned here are provided in an early section.)*
